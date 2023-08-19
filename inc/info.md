@@ -1,0 +1,1 @@
+inc stands for includes and in here goes all the files we want to also include in the project.
