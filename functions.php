@@ -4,6 +4,17 @@
     }
     add_action('after_setup_theme','themeTagSupport');
     
+    function menus(){
+        $locations = array(
+            
+            'primary' => "Desktop Primary Left Sidebar",
+            'footer' => "Footer Menu Items"
+
+        );
+        register_nav_menus($locations);
+    }
+    add_action('init','menus');
+
     function registered_styles(){
         $version = wp_get_theme()->get( 'Version' );
         wp_enqueue_style('php-blog-css', get_template_directory_uri() . "/blog-site-template/css/style.css", array('php-blog-bootstrap'), '1.0', 'all');
