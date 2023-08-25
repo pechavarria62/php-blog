@@ -8,7 +8,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="Blog Site Template">
 		<meta name="author" content="https://youtube.com/FollowAnd rew">   
-		<link rel="shortcut icon" href="/blog-site-template/images/logo.png"> 		
+		<link rel="shortcut icon" href="/wp-content/themes/php-blog/assets/images/logo.png"> 		
 		<?php
 			wp_head();
 		?>
@@ -26,7 +26,7 @@
 				</button>
 
 				<div id="navigation" class="collapse navbar-collapse flex-column" >
-					<img class="mb-3 mx-auto logo" src="blog-site-template/images/logo.png" alt="logo" >	
+					<img class="mb-3 mx-auto logo" src="/wp-content/themes/php-blog/assets/images/logo.png" alt="logo" >	
 					<?php
 					
 						wp_nav_menu(
