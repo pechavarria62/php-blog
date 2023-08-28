@@ -5,12 +5,8 @@
                 <?php the_date(); ?>
             </span>
             <?php
-                the_tags('<span class="tag"><i class="fa fa-tag"></i>', '</spam><span class="tag"><i class="fa fa-tag"></i>','</spam>');
+                the_tags('<span class="tag"><i class="fa fa-tag"></i>', '</span><span class="tag"><i class="fa fa-tag"></i>','</span>');
             ?>
-            <span class="tag">
-                <i class='fa fa-tag'></i>
-                category
-            </span>
             <span class="comment">
                 <a href="#comments">
                     <i class='fa fa-comment'></i>
