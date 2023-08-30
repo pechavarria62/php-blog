@@ -26,11 +26,36 @@
     add_action('wp_enqueue_scripts', 'registered_styles');
 
     function registered_scripts(){
-
         wp_enqueue_script('php-blog-bootstrap-jquery', "https://code.jquery.com/jquery-3.4.1.slim.min.js",array(), '3.4.1', true);
         wp_enqueue_script('php-blog-bootstrap-popper', "https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js",array(), '1.16.0', true);
         wp_enqueue_script('php-blog-bootstrap-script', "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js",array(), '4.4.1', true);
         wp_enqueue_script('php-blog-js-script', get_template_directory_uri() ."/assets/js/main.js",array(), '1.0', true);
     }
     add_action('wp_enqueue_scripts', 'registered_scripts');
+    
+    function WidgetAreas(){
+        register_sidebar(
+            array(
+                'before_title' => '',
+                'after_title' => '',
+                'before_widget' => '<ul class="social-list list-inline py-3 mx-auto">',
+                'after_widget' => '</ul>',
+                'name' => 'Sidebar Area',
+                'id' => 'sidebar-1',
+                'description' => 'Sidebar Widget Area'
+            )
+        );
+        register_sidebar(
+            array(
+                'before_title' => '',
+                'after_title' => '',
+                'before_widget' => '',
+                'after_widget' => '',
+                'name' => 'Footer Area',
+                'id' => 'footer-1',
+                'description' => 'Footer Widget Area'
+            )
+        );
+    }
+    add_action('widgets_init', 'WidgetAreas')
 ?>
