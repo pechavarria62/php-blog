@@ -1,2 +1,0 @@
-"made a content-page file on the templates-part forder to show the naltes posts page, addad widget capabilities to the Sidebar and the footer,
-added a search field and have it in the 404 file page and in the footer."
